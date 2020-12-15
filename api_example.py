@@ -8,8 +8,8 @@ from requests import request
 from pprint import pprint
 import json
 from main import show_json
-
-URL = 'http://ptx.transportdata.tw/MOTC/v2/Rail/THSR/DailyTimetable/TrainDate/?TrainDate=2020:12:24&$top=30&$format=JSON'
+TrainDate = '2020-12-24'
+URL = f'http://ptx.transportdata.tw/MOTC/v2/Rail/THSR/DailyTimetable/TrainDate/{TrainDate}?$top=30&$format=JSON'
 
 app_id = 'c4fc794ed9624955a1e5d0f133606c43'
 app_key = 'A429yj6gzCL-S4QXRqhzu031EnE'
